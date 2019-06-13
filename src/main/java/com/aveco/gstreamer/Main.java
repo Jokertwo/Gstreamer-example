@@ -2,11 +2,9 @@ package com.aveco.gstreamer;
 
 import java.awt.FlowLayout;
 import java.net.URI;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
-
 import org.freedesktop.gstreamer.Gst;
 import org.freedesktop.gstreamer.elements.PlayBin;
 
@@ -20,7 +18,8 @@ public class Main {
 
         Gst.init();
         playBin = new PlayBin("Test Gstreamer");
-        playBin.setURI(URI.create("https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer-480p.webm"));
+        playBin.setURI(
+            URI.create("https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer-480p.webm"));
         playBin.pause();
         playBin.play();
 
@@ -45,7 +44,6 @@ public class Main {
         });
 
     }
-
 
 
     public static void main(String[] args) {
