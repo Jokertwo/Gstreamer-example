@@ -13,10 +13,17 @@
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.freedesktop.gstreamer/gst1-java-core -->
         <dependency>
-            <groupId>com.aveco.nue.gui</groupId>
-            <artifactId>side-panels</artifactId>
-            <version>1.0.5-SNAPSHOT</version>
+            <groupId>org.freedesktop.gstreamer</groupId>
+            <artifactId>gst1-java-core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/net.java.dev.jna/jna -->
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>5.3.1</version>
         </dependency>
     </dependencies>
 
